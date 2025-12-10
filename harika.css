@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: pink;
+}
+
+h1 {
+  color: rgb(233, 10, 10);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 25px;
+}
+</style>
+</head>
+<body>
+
+<h1>this is my css example</h1>
+<p>my first paragraph</p>
+
+</body>
+</html>
+
