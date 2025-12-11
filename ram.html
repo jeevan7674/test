@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ram.css">
+</head>
+<body>
+    <!--create digital seconds clock using set interval and date object in js.
+    the date object can be used to get the date time ,hours,seconds which can
+    be updated using setinterval try to keep the ui good looking-->
+    <div class="container">
+        <h1>Digital Clock</h1>
+    <div id="h" class="box"></div>
+    <div id="m" class="box"></div>
+    <div id="s" class="box"></div>
+    <div id="d" class="box1"></div>
+    </div>
+
+    <script>
+        
+        setInterval(()=>{
+            let a = new Date();
+            let h=a.getHours();
+            let m=a.getMinutes();
+            let s=a.getSeconds();
+            let day = a.getDate();
+            let month = a.getMonth()+1 ; 
+            let year = a.getFullYear();
+            document.getElementById("h").innerHTML=h;
+            document.getElementById("m").innerHTML=m;
+            document.getElementById("s").innerHTML=s;
+            document.getElementById("d").innerHTML=`${day}-${month}-${year}`;
+
+        },1000);
+    </script>
+</body>
+</html>
